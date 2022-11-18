@@ -1,0 +1,138 @@
+/*mobile*/
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Dark-Blue);
+}
+
+.container {
+  border-radius: 10px;
+  width: 345px;
+  text-align: center;
+  background-color: var(--Dark-Grayish-Blue);
+  position: relative;
+  bottom: 56px;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--Light-Cyan);
+}
+
+i {
+  font-size: 10px;
+  vertical-align: 1em;
+}
+
+.title {
+  padding: 40px 0 24px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  color: var(--Neon-Green);
+  letter-spacing: 3.5px;
+}
+
+.text {
+  margin: 0 26px 0;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.text:hover {
+  transform: scale(1.1);
+}
+
+.advice-text {
+  font-size: 23.4px;
+  line-height: 33.7px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.divider-mobile {
+  padding-top: 23px;
+  display: block;
+  margin: 0 auto;
+}
+
+img .btn {
+  width: 100%;
+}
+
+.advice-btn {
+  font-size: 0%;
+}
+
+.advice-btn button {
+  top: 32px;
+  position: relative;
+  justify-items: center;
+  border: none;
+  outline: none;
+  padding: 18px 18px;
+  border-radius: 50%;
+  background: var(--Neon-Green);
+  transition: all 0.5s;
+}
+
+.advice-btn button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2em 5px var(--Neon-Green);
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    border-radius: 20px;
+    width: 545px;
+    bottom: 25px;
+  }
+
+    .text {
+      margin: 0 40px 0;
+    }
+
+  i {
+    font-size: 11px;
+    vertical-align: 1.2em;
+  }
+
+  .advice-text {
+    font-size: 30px;
+    line-height: 36.7px;
+    font-weight: 600;
+  }
+
+  .title {
+    padding: 52px 0 29px;
+    font-size: 11.5px;
+  }
+
+  .divider-mobile {
+    padding: 40px 0 8px 0;
+  }
+
+  .advice-btn button {
+    padding: 20px 20px;
+    top: 36px;
+  }
+};
